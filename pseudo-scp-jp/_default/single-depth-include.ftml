@@ -1,0 +1,128 @@
+[[iftags +エッセイ]]
+[[toc]]
+
+++ 単一深層インクルードとは
+**私、RTa_technologyが[[*user C-take]]氏が作成された[*http://shitake-crude-production.wikidot.com/whathubinclude 深層インクルードとは]と同じように命名した造語です。**
+深層インクルードはご存じの通り、includeに初期値を定めることができます。その代わり、インクルード元が複数必要であるというデメリットがありました。
+それを解決するのが「単一深層インクルード」となります。これには@@[[iftags]]@@と呼ばれるモジュールが使われます。まず、@@[[iftags]]@@の特性について説明しましょう。
+
+++ @@[[iftags]]@@の特性
+[[code]]
+iftags: [[iftags]] Super Commentout (Hide Always) [[/iftags]] /iftags
+[[/code]]
+
+**result:**
+[[div class="code"]]
+iftags: [[/iftags]][[iftags]] Super Commentout (Hide Always) [[/iftags]][[iftags +エッセイ]] /iftags
+[[/div]]
+@@[[iftags]]@@と@@[[/iftags]]@@で囲った部分は絶対にコメントアウトされます。
+一旦、確実にコメントアウトされるということを覚えておいてください。
+
+++ 単一深層インクルードの仕組み
+単一深層インクルードの仕組みを説明していきます。
+
+[[div class="code"]]
+単一深層インクルード元:
+
+##red|@@[[iftags]]@@##
+##darkturquoise|@@[{$hoge}/iftags]]@@##
+##darkturquoise|@@[{$hoge}@@include :pseudo-scp-jp:single-depth-include## ##blue|hogebase=[|####darkorange|fuga={$fuga}|fuga=1####darkturquoise|]]##
+##darkturquoise|@@[{$hoge}iftags]]@@##
+##blue|@@[{$hogebase}/iftags]]@@##
+##darkorange|fuga={$fuga}##
+##blue|@@[{$hogebase}iftags]]@@##
+##red|@@[[/iftags]]@@##
+[[/div]]
+----
+[[div class="code"]]
+インクルード元:
+
+@@[@@[include :pseudo-scp-jp:single-depth-include ##darkturquoise|hoge=[####darkorange||fuga=2##]]
+[[/div]]
+----
+----
+----
++++ 1. インクルード元前半
+まず、[[div class="code"]]
+@@[@@[include :pseudo-scp-jp:single-depth-include ##darkturquoise|hoge=[####transparent||fuga=2##]]
+[[/div]]この時点で、##darkturquoise|hoge##に##darkturquoise|[##が代入されるために単一深層インクルード元はこういう風になっています。[[div class="code"]]
+##red|@@[[iftags]]@@##
+##darkturquoise|@@[[/iftags]]@@##
+##darkturquoise|[[include :pseudo-scp-jp:single-depth-include## ##blue|hogebase=[|####darkorange|fuga={$fuga}|fuga=1####darkturquoise|]]##
+##darkturquoise|@@[[iftags]]@@##
+##transparent|@@[{$hogebase}/iftags]]@@##
+##transparent|fuga={$fuga}##
+##transparent|@@[{$hogebase}iftags]]@@##
+##red|@@[[/iftags]]@@##
+[[/div]]つまり、@@[[iftags]]@@と@@[[/iftags]]@@は消えるので[[div class="code"]]
+##darkturquoise|[[include :pseudo-scp-jp:single-depth-include## ##blue|hogebase=[|####darkorange|fuga={$fuga}|fuga=1####darkturquoise|]]##
+[[/div]]という形のインクルードを読み込んでいるのです。
+----
++++ 2. 単一深層インクルード
+次に、[[div class="code"]]
+@@[@@[include :pseudo-scp-jp:single-depth-include ##blue|hogebase=[|####transparent|fuga={$fuga}|fuga=1##]]
+[[/div]]をインクルードすることで、[[div class="code"]]
+##red|@@[[iftags]]@@##
+##transparent|@@[{$hoge}/iftags]]@@##
+##transparent|[{$hoge}include :pseudo-scp-jp:single-depth-include hogebase=[|fuga={$fuga}|fuga=1]]##
+##transparent|@@[{$hoge}iftags]]@@##
+##blue|@@[[/iftags]]@@##
+##darkorange|fuga={$fuga}##
+##blue|@@[[iftags]]@@##
+##red|@@[[/iftags]]@@##
+[[/div]]つまり、@@[[iftags]]@@と@@[[/iftags]]@@は消えるので[[div class="code"]]
+##darkorange|fuga={$fuga}##
+[[/div]]をインクルードします。この時、[[div class="code"]]
+@@[@@[include :pseudo-scp-jp:single-depth-include ##transparent|hogebase=[|####darkorange|fuga={$fuga}|fuga=1##]]
+[[/div]]と、深層インクルードの形をとっているために{{fuga}}には初期値=1が代入されています。
+----
++++ 3. インクルード元後半
+最後に、インクルード元のこの部分[[div class="code"]]
+@@[@@[include :pseudo-scp-jp:single-depth-include ##transparent|hoge=[####darkorange||fuga=2##]]
+[[/div]]で、{{fuga}}に2を代入しているために、インクルードは
+> fuga=2
+を示します。
+本当か?と思われた方は是非，[*http://pseudo-scp-jp.wikidot.com/single-depth-include-test こちら]をご覧ください．
+----
+----
+----
+++ まとめ
+このように、@@[[iftags]]@@と@@[[include @@[# ooo:ooo]@@]]@@の2つ目の{{[}}を後から代入させることによって、1ページ内で初期値代入まで行うことができます。これをよく理解してうまく使えば、様々なところで有用に使えるのではないでしょうか。
+
+++ 最後に
+よくわからない部分などありましたらご気軽にPMをお送りください。対応させていただきます。
+単一深層インクルードの原著者である[[*user Boyu12]]氏に最大限の感謝をもって終わりの言葉とさせていただきます。
+[[module css]]
+.code {
+  position: relative;
+  padding: 1.5em 1em 1em;
+  box-shadow: 0 1px #F7F7F7, -3px 1px #da8596;
+  border-color: #00000000;
+  border-width: 1px 0;
+}
+.code:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "code";
+  background: #da8596;
+  color: #f5f5f5;
+  width: 5em;
+  text-align: center;
+}
+[[/module]]
+
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [# 高度なフォーマットとあなた] | 単一深層インクルードとは | [[[hyper-page-changer-and-you|]]] >>
+[[/=]]
+[[/div]]
+[[/iftags]]
+[[iftags]]
+[{$hoge}/iftags]]
+[{$hoge}include :pseudo-scp-jp:single-depth-include hogebase=[|fuga={$fuga}|fuga=1]]
+[{$hoge}iftags]]
+[{$hogebase}/iftags]]
+fuga={$fuga}
+[{$hogebase}iftags]]
+[[/iftags]]

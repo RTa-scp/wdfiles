@@ -1,0 +1,624 @@
+[[iftags]]
+componentやテーマなど他の支部には多数存在する。こんなcomponent使ってみたい！といって記事で使ってみると何か違和感がある……動かないわけではないがずれていたり当該支部では正常に動いていたのに……といった時に何故正しく動かないか理解しよう。
+[[/iftags]]
+[[toc]]
+
++ 1. ENとJPのテーマを見比べる
+[[collapsible]]
+++ 主要
+[[div class="blockquote"]]
++++* #content-wrap
+[[div_ class="ja"]]
+min-height:2100px;
+height: 1850px;
+[[/div]][[div_ class="en"]]
+min-height: 1300px;
+height: 1500px;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #top-bar
+[[div_ class="ja"]]
+width: 100%;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #top-bar ul li ul
+[[div_ class="ja"]]
+none
+[[/div]][[div_ class="en"]]
+border-width: 0 1px 1px 1px;
+width: auto;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar
+[[div_ class="ja"]]
+margin: 0 0 0 2em;
+left: 0;
+[[/div]][[div_ class="en"]]
+left: 2em;
+overscroll-behavior: none;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar .collapsible-block-link
+[[div_ class="ja"]]
+margin-left: 15px;
+[[/div]][[div_ class="en"]]
+margin-left: 0;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar .collapsible-block-unfolded-link .collapsible-block-link
+[[div_ class="ja"]]
+none
+[[/div]][[div_ class="en"]]
+margin-left: 15px;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #main-content
+[[div_ class="ja"]]
+margin: 0 4em 0 20em;
+[[/div]][[div_ class="en"]]
+margin: 0 2em 0 22em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .yui-navset .yui-nav,
++++* .yui-navset .yui-navset-top .yui-nav
+[[div_ class="ja"]]
+border-color: #444;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .yui-navset li
+[[div_ class="ja"]]
+line-height: 141%;
+word-break:break-all;
+[[/div]][[div_ class="en"]]
+line-height: normal;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .page-rate-widget-box
+[[div_ class="ja"]]
+display: inline;
+margin:0;
+padding:0;
+[[/div]][[div_ class="en"]]
+display: inline-block;
+margin-right: 2em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .page-rate-widget-box .rate-points
+[[div_ class="ja"]]
+color: #FFF;
+font-weight: bold;
+padding: 0 10px;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .page-rate-widget-box .cancel a
+[[div_ class="ja"]]
+padding: 0 5px;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .rateBox
+[[div_ class="ja"]]
+display:inline-block;
+[[/div]][[div_ class="en"]]
+当該セレクタ無し
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .rateBox p
+[[div_ class="ja"]]
+display:inline;
+margin:0;
+padding:0;
+[[/div]][[div_ class="en"]]
+当該セレクタ無し
+[[/div]]
+[[/div]]
+
+
+++ 副次
+
+[[div class="blockquote"]]
++++* a:visited
+[[div_ class="ja"]]
+none
+[[/div]][[div_ class="en"]]
+color: #824;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar a:visited
+[[div_ class="ja"]]
+none
+[[/div]][[div_ class="en"]]
+color: #b01;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* sup
+[[div_ class="ja"]]
+none
+[[/div]][[div_ class="en"]]
+vertical-align: top;
+position: relative;
+top: -.5em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #search-top-box-form input[type=submit]
+[[div_ class="ja"]]
+background: linear-gradient(to bottom, #966,#633,#300);
+[[/div]][[div_ class="en"]]
+background-image: linear-gradient(to bottom, #966, #633, #300);
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #search-top-box-form input[type=submit]:hover,
++++* #search-top-box-form input[type=submit]:focus
+[[div_ class="ja"]]
+background: linear-gradient(to bottom, #c99,#966,#633);
+[[/div]][[div_ class="en"]]
+background-image: linear-gradient(to bottom, #966, #633, #300);
+[[/div]]
+[[/div]]
+
+
+[[div class="blockquote"]]
++++* #side-bar .side-block.media
+[[div_ class="ja"]]
+該当セレクタ無し
+[[/div]][[div_ class="en"]]
+background: #e5e5ff;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar .side-block.resources
+[[div_ class="ja"]]
+該当セレクタ無し
+[[/div]][[div_ class="en"]]
+background: #e7f7e9;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar .menu-item.small
+[[div_ class="ja"]]
+該当セレクタ無し
+[[/div]][[div_ class="en"]]
+font-size: 90%;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #breadcrumbs
+[[div_ class="ja"]]
+font-size: 85%;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .pseudocrumbs
+[[div_ class="ja"]]
+none
+[[/div]][[div_ class="en"]]
+margin: -1em 0 1em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .heritage-rating-module
++++* .heritage-rating-module .page-rate-widget-box
++++* .heritage-rating-module .heritage-emblem
++++* .heritage-rating-module .heritage-emblem img
+[[div_ class="ja"]]
+[省略]
+[[/div]][[div_ class="en"]]
+当該セレクタ無し
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 768px)
+++++* .scp-clear-true.scp-image-block
+[[div_ class="ja"]]
+float: none;
+clear: both;
+margin-left: auto;
+margin-right: auto;
+[[/div]][[div_ class="en"]]
+当該セレクタ無し
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .footer-wikiwalk-nav
++++* .licensebox .collapsible-block-link
++++* .licensebox .collapsible-block-link:hover
++++* .licensebox .collapsible-block-link:active
+[[div_ class="ja"]]
+当該セレクタ無し
+[[/div]][[div_ class="en"]]
+[省略]
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .thread-container .post .head
+[[div_ class="ja"]]
+background: linear-gradient(to right, #eee, #eeecec);
+[[/div]][[div_ class="en"]]
+background-image: linear-gradient(to right, #eee, #eeecec);
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* div.curved
+[[div_ class="ja"]]
+当該セレクタ無し
+[[/div]][[div_ class="en"]]
+border-radius: 10px;
+margin: 1em 3em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* div.curved
+[[div_ class="ja"]]
+当該セレクタ無し
+[[/div]][[div_ class="en"]]
+margin: 1em 0;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (min-width: 480px) and (max-width: 580px)
+++++* div.curved
+[[div_ class="ja"]]
+当該セレクタ無し
+[[/div]][[div_ class="en"]]
+margin: .5em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* .changes-list-item td.title
++++* .changes-list-item .flags
++++* .changes-list-item .mod-date
++++* .changes-list-item .mod-by
++++* @media (max-width: 435px)
+++++* .changes-list-item .revision-no
+[[div_ class="ja"]]
+当該セレクタ無し
+[[/div]][[div_ class="en"]]
+[省略]
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @-moz-document url-prefix()
+++++* .emph
+[[div_ class="ja"]]
+background-image: url(http://scp-jp.wikidot.com/local--files/component%3Atheme/dot.png), none;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+++++* .emph
+[[div_ class="ja"]]
+background-image: url(http://scp-jp.wikidot.com/local--files/component%3Atheme/dot.png), none;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 767px)
+++++* .mobile-top-bar ul li:last-of-type ul
+++++* span, a
+[[div_ class="ja"]]
+該当セレクタ無し
+[[/div]][[div_ class="en"]]
+[省略]
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* #search-top-box-input
+[[div_ class="ja"]]
+width: 5em;
+[[/div]][[div_ class="en"]]
+display: none;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* table.form td, table.form th
+[[div_ class="ja"]]
+width: 5em;
+[[/div]][[div_ class="en"]]
+display: none;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* table.form td, table.form th
+[[div_ class="ja"]]
+padding: 0;
+[[/div]][[div_ class="en"]]
+none
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* td.title
+[[div_ class="ja"]]
+width: 30%;
+[[/div]][[div_ class="en"]]
+width: 15em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* #page-content div.title
++++* @media (max-width: 385px)
+++++* #header
+++++* #header h1, #header h2
+++++* #header, #top-bar
+++++* .mobile-top-bar
+++++* #top-bar li a
+[[div_ class="ja"]]
+該当セレクタ無し
+[[/div]][[div_ class="en"]]
+[省略]
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* td.title
+[[div_ class="ja"]]
+width: 30%;
+[[/div]][[div_ class="en"]]
+width: 15em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (min-width: 480px) and (max-width: 580px)
+++++* td.title (JP)
+++++* #page-content div.title (EN)
+[[div_ class="ja"]]
+width: 30%;
+[[/div]][[div_ class="en"]]
+word-break: keep-all;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (min-width: 480px) and (max-width: 580px)
+++++* td.name
+[[div_ class="ja"]]
+該当セレクタ無し
+[[/div]][[div_ class="en"]]
+width: 15em;
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 767px)
+++++* .open-menu a
+[[div_ class="ja"]]
+border: 0.2em solid #888 !important;
+background-color: #fff !important;
+color: #888 !important;
+[[/div]][[div_ class="en"]]
+border: .2em solid #888;
+background-color: #fff;
+color: #888;
+[[/div]]
+[[/div]]
+
+++ 不要?
+[[div class="blockquote"]]
++++* #top-bar
+[[div_ class="ja"]]
+z-index: 50;
+[[/div]]
+[[div class="description"]]
+プロパティ被り 20に上書き
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #top-bar ul li ul
+[[div_ class="ja"]]
+[[/div]]
+[[div class="description"]]
+セレクタ重複 統合しては…?
+L253, L295
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #top-bar ul li ul li, #top-bar ul li ul li.sfhover,
++++* #top-bar ul li ul li, #top-bar ul li ul li:hover
+[[div_ class="ja"]]
+[[/div]]
+[[div class="description"]]
+セレクタ重複
+#top-bar ul li ul li
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* #side-bar div.menu-item.sub-item
+[[div_ class="ja"]]
+[[/div]]
+[[div class="description"]]
+既述無し
+[[/div]]
+[[/div]]
+
+[[div class="blockquote"]]
++++* @media (max-width: 479px)
+++++* table.form td, table.form th
+[[div_ class="ja"]]
+セレクタ重複 統合
+L1089 L1097
+[[/div]][[div_ class="description"]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
++ 2. 色々なテーマのローカライズの内容
+[[collapsible]]
+++ WWS
+
+[[code type="css"]]
+/*  Localized by ukwhatn.*/
+/* for SCP-JP */
+ 
+#page-content .page-rate-widget-box .cancel {
+    padding: 0;
+    overflow: hidden;
+}
+ 
+#page-content .creditRate {
+    margin-right: unset;
+}
+ 
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+}
+ 
+#page-content .creditRate.creditModule .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: solid 1px #665731;
+}
+ 
+.creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background-color: #a3c162!important;
+}
+ 
+.creditRate.creditModule .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0 5px 5px 0;
+}
+[[/code]]
+
+++ Simple Yonder
+[[code type="css"]]
+/*  Localized by ukwhatn.*/
+/* en */
+body {
+    font-size: 14px;
+    --accentColor: #F24F4F;
+}
+#top-bar a {
+    font-weight: bold;
+}
+
+/* jp */
+body {
+    font-size: 14.3px;
+    --accentColor: #E53C35;
+}
+#top-bar a {
+    font-weight: normal;
+}
+
+
+/* JP ONLY */
+/* Credit */
+#page-content .page-rate-widget-box .rate-points {
+    font-family: "Open Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+    font-size: unset;
+    padding: 0 5px;
+}
+ 
+#page-content .page-rate-widget-box .cancel a {
+    color: #7E2520;
+}
+ 
+#page-content .page-rate-widget-box .cancel a:hover {
+    color: #E53C35;
+}
+ 
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-left: unset;
+}
+[[/code]]
+[[/collapsible]]
+
++ 3. まとめ
+* サイドバー位置
+* Creditモジュール
+* フォントサイズ
+* Credit/infoモジュール周辺
+
+[[module css]]
+.ja {
+    position: relative;
+    left: 25px;
+    background-color: #FFEBEE;
+    width: calc(100% - 12.5px);
+    margin-bottom: 1em;
+}
+.en {
+    position: relative;
+    left: 25px;
+    background-color: #c9e5fd;
+    width: calc(100% - 12.5px);
+    margin-bottom: 1em;
+}
+[[/module]]

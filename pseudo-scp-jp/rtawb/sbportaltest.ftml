@@ -1,0 +1,163 @@
+[[include :rpc-jp-sandbox:css:base]]
+[[include :rpc-jp-sandbox:css:portal]]
+[[module css]]
+#page-content iframe.html-block-iframe {
+  height: 75px;
+}
+[[/module]]
+
+[[div class="sbsys-baseblock sbsys-blueblock not-hide"]]
+[[module ListUsers users="."]]
+[[include :smlt:boyu12:inc-loop c=__________|p=:efc:component:builder]]
+|content=[[module ListPages range="." limit="1"{$g}]
+[[iframe https://pseudo-scp-jp.wdfiles.com/local--code/rtawb%3Asbportaltest/1#created_by_id=%%created_by_id{$p}%&currentusernum=%%number%% class="html-block-iframe" scrolling="no" name="getName" sandbox="allow-top-navigation allow-scripts" referrerpolicy="unsafe-url"{$g}]
+[[/module{$g}]|g=]|p=%]]
+[[/module]]
+[[/div]]
+@@@@
+----
+@@@@
+[[div class="sbsys-baseblock"]]
+++ **翻訳中の下書き**
+----
+[[module ListPages category="draft" tags="+_draft +_draft-translate +_review-yet" separate="yes" created_by="=" perPage="50"  order="created_at"]]
+[[size 130%]]**%%title_linked%%**[[/size]] - [[size 60%]]コメント:[[/size]] **%%comments%%** [[size 60%]]更新:[[/size]] **%%updated_at%%**
+[[/module]]
+@@ @@
+@@ @@
+++ **査読中の下書き**
+----
+[[module ListPages category="draft" tags="+_draft +_draft-translate +_review-in" separate="yes" created_by="=" perPage="50"  order="created_at"]]
+[[size 130%]]**%%title_linked%%**[[/size]] - [[size 60%]]コメント:[[/size]] **%%comments%%** [[size 60%]]更新:[[/size]] **%%updated_at%%**
+[[/module]]
+@@ @@
+@@ @@
+++ **投稿済の下書き**
+----
+[[module ListPages category="draft" tags="+_draft +_draft-translate +_review-end" separate="yes" created_by="=" perPage="50"  order="created_at"]]
+[[size 130%]]**%%title_linked%%**[[/size]] - [[size 60%]]コメント:[[/size]] **%%comments%%** [[size 60%]]更新:[[/size]] **%%updated_at%%**
+[[/module]]
+@@ @@
+@@ @@
+++ **その他のページ**
+----
+[[module ListPages category="draft" tags="+_draft +_draft-other" separate="yes" created_by="=" perPage="50"  order="created_at"]]
+[[size 130%]]**%%title_linked%%**[[/size]] - [[size 60%]]コメント:[[/size]] **%%comments%%** [[size 60%]]更新:[[/size]] **%%updated_at%%**
+[[/module]]
+@@ @@
+@@ @@
+[[/div]]
+@@ @@
+@@ @@
+
+%%content%%
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[include :rpc-jp-sandbox:component:portaleditor]]
+[[iftags +_edit]]
+
+[[module css]]
+.sbsys-portaleditor {
+  background-color: crimson;
+}
+.sbsys-portaleditor .heading, .sbsys-portaleditor .item, .sbsys-portaleditor .item a , .sbsys-col .collapsible-block-link{
+  color: white!important;
+}
+[[/module]]
+
+[[/iftags]]
+
+
+
+
+[[iftags]]
+[[code type="html"]]
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"><!-- LOAD jQuery-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:700&display=swap');
+        body {
+            text-align: center;
+            font-family: 'M PLUS 1p', sans-serif;
+        }
+        .sbsys-pagecreator-inputarea input[type=text] {
+            border-radius: 1px;
+            border: solid 1px black;
+            margin: -10px auto;
+            margin-bottom: 10px;
+            width: 85%;
+            height: 2rem;
+            text-align: center;
+            box-shadow: none;
+            background-color: white;
+            font-size: 100%;
+        }
+
+        .sbsys-pagecreator-link a {
+            font-size: 120%;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div class="sbsys-pagecreator-inputarea">
+      <input id="inputText" placeholder="ページ名を入力" type="text">
+    </div><span class="sbsys-pagecreator-link"><a href="javascript:;" id="pagecreator_link" onclick="alert('ページ名を入力してください');" rel="noreferrer" target="_parent">下書きを作成する</a></span> <!-- jQuery SCRIPT-->
+     
+    <script style="display:none;">
+        var data;
+        $(function() {
+          // INPUT WATCHER
+          $('#inputText').on('input change', function() {
+            data = get_url_hash(window.location.href.split("#")[1]);
+            // GET INPUT
+            var pageName = $(this).val();
+            if (pageName === "") $('#pagecreator_link').attr('onclick', 'alert("ページ名を入力してください");');
+            else if (pageName.match(/^['!?,.'A-Z&_\/0-9a-z:-]+$/) !== null) $('#pagecreator_link').attr('onclick', 'createDraft("' + pageName + '");');
+            else $('#pagecreator_link').attr('onclick', 'alert("このページ名は使用不可能です");');
+          });
+        });
+
+        function createDraft(pageName) {
+          var userNameL;
+          try {
+            userNameL = data['currentusernum'];
+            if (userNameL === undefined) {
+              alert('Wikidotにサインインしてください。');
+              return;
+            }
+          } catch (e) {
+            alert('Wikidotにサインインしてください。');
+          }
+          if ("" + data['created_by_id'] == userNameL) {
+            parent.location.href = '/draft:' + data['created_by_id'] + '-' + pageName + '/parentPage/portal:' + data['created_by_id'] + '/title/' + pageName + '/#_editpage';
+          } else {
+            alert('下書きは自分のポータルから作成してください。');
+          }
+        }
+
+        function get_url_hash(hash) {
+          let hash_array = hash.split("&");
+          let parameter_list = {};
+          for (var i = 0; i < hash_array.length; i++) {
+            let parameter = decodeURI(hash_array[i]).split("=");
+            parameter_list[parameter[0]] = parameter[1];
+          }
+          return parameter_list;
+        }
+    </script> <!-- SCRIPT END -->
+  </body>
+</html>
+[[/code]]
+[[/iftags]]

@@ -1,0 +1,558 @@
+[[div class="system-portal-amount-warning" style="display:none;"]]
+[[div class="content"]]
+[[module ListPages category="portal" created_by="=" limit="1" separate="no" range="others"]]
+[[span class="title"]][[span_]][[/span]]
+[[span class="fa fa-exclamation-triangle"]]WARNING[[/span]][[span_]][[/span]]
+[[/span]]
+[[div style="font-size:140%;text-align:center;font-weight:bold;"]]
+Do not have multiple portal pages.
+[[/div]]
+@@@@
+[[table style="width:100%;"]]
+[[row]]
+[[cell style="width:4em;vertical-align:top;"]]
+**警告:**
+[[/cell]]
+[[cell]]
+複数のportalページ所持は禁止されています。1アカウントが所持できるportalは1つまでです。ユーザ（%%created_by%%）は重複したportalを速やかに削除してください。詳しくは[*http://scp-jp.wikidot.com/sandbox3guide 利用ガイド]を参照してください。
+[[/cell]]
+[[/row]]
+[[/table]]
+@@@@
+[[a href="http://scp-jp.wikidot.com/sandbox3guide" target="_blank" class="system-guid-link"]] 利用ガイド[[/a]]
+@@@@
+[[/module]]
+[[module ListPages category="portal" created_by="=" limit="1" separate="no" range="others"]]
+**ユーザ(%%created_by%%)が作成したportal**
+[[/module]]
+[[module ListPages category="portal" created_by="=" separate="no" order="created_at"]]
+# [[[%%fullname%%|%%fullname%%]]]   ( %%created_at|%Y/%m/%d%% )
+[[/module]]
+[[/div]]
+[[/div]]
+[[module ListPages category="portal" created_by="=" limit="1" separate="no" range="others"]]
+@@@@
+[[/module]]
+[[module css]]
+.portal-content-panel {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 0.1em;
+    font-weight: 500;
+    box-shadow: inset 0px 0px 3px #E2ADFF, 0px 0px 3px #E2ADFF;
+}
+
+.portal-content-panel p {
+    padding: 0;
+    margin: 0;
+}
+
+.portal-content-panel a {
+    display: block;
+    padding: 1em 0;
+}
+
+.system-draft-list-show-area ol li
+{
+    margin:0 0 0.3em 0;
+}
+
+.system-undefined-draftList p,
+.system-criticismin-draftList p,
+.system-reforming-draftList p,
+.system-criticismend-draftList p{
+    padding:0;
+    margin:0;
+}
+.undefined-title,
+.criticismin-title,
+.reforming-title,
+.criticismend-title{
+    font-weight:bold;
+    font-size: 150%;
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.undefined-title:before {
+    content: "\f05c";
+    font-family: FontAwesome;
+    margin-right: 3px;
+    color: #ff806e;
+}
+.criticismin-title:before {
+    content: "\f24a";
+    font-family: FontAwesome;
+    margin-right: 3px;
+    color: #A7EE30;
+}
+.reforming-title:before {
+    content: "\f044";
+    font-family: FontAwesome;
+    margin-right: 3px;
+    color: #447acc;
+}
+.criticismend-title:before {
+    content: "\f046";
+    font-family: FontAwesome;
+    margin-right: 3px;
+    color: #ffc85a;
+}
+
+#u-newdraft .html-block-iframe{
+dislay:block;
+width:100%;
+height:3em !important;
+}
+[[/module]]
+[[div class="system-userplace"]]
+[[div id="u-newdraft" class="portal-content-panel"  style="font-size:200%"]]
+[[div id="u-startNo"]]
+[[module ListUsers users="."]]
+[http://scp-jp-sandbox3.wikidot.com/draft:%%name%%-1/parentPage/portal:%%number%%/#_editpage 新しい下書きを作成する]
+[[size smaller]]「Permission error」というポップアップが表示され、下書きの作成に失敗した場合は、[*http://scp-jp.wikidot.com/sandbox3guide#toc6 参加申請]を行ってください。[[/size]]
+[[/module]]
+[[/div]]
+[[module ListUsers users="."]]
+[[include :smlt:boyu12:inc-loop c=__________|p=:efc:component:builder]]
+|content=[[module ListPages category="draft" created_by="=" order="created_at desc" limit="1"{$g}]
+[[iframe https://pseudo-scp-jp.wdfiles.com/local--code/rtawb%3Asb3portaltest/1#accountname=%%created_by_unix{$p}%,currentdraft=%%fullname{$p}%,name=%%created_by{$p}%,createdBy=%%created_by_id{$p}%,accountnum=%%number%% class="html-block-iframe"  scrolling="no" name="SystemCreateSerialDraft"{$g}]
+[[/module{$g}]|g=]|p=%]]
+[[/module]]
+[[/div]]
+%%content%%
+
+[[div class="system-draft-list-show-area"]]
+
+[[div class="system-undefined-draftList"]]
+@@@@
+@@@@
+[[span class="undefined-title"]]ステータス未定義の下書きリスト[[/span]]
+[[/div]]
+[[module ListPages category="draft" tags="-_criticism-in,-_reforming,-_criticism-end" created_by="=" separate="no" perPage="10" urlAttrPrefix="undefindstate" separate="no"]]
+# %%title_linked%% (%%comments%%)
+[[/module]]
+[[div class="system-criticismin-draftList"]]
+@@@@
+@@@@
+[[span class="criticismin-title"]]批評中下書きリスト[[/span]]
+[[/div]]
+[[module ListPages category="draft" tags="_criticism-in" created_by="=" perPage="10" urlAttrPrefix="criticismin" separate="no"]]
+# %%title_linked%% (%%comments%%)
+[[/module]]
+[[div class="system-reforming-draftList"]]
+@@@@
+@@@@
+[[span class="reforming-title"]]批評中断状態の下書きリスト[[/span]]
+[[/div]]
+[[module ListPages tags="_reforming" category="draft" created_by="=" order="created_at desc" perPage="10" urlAttrPrefix="reforming" separate="no"]]
+# %%title_linked%% (%%comments%%)
+[[/module]]
+[[div class="system-criticismend-draftList"]]
+@@@@
+@@@@
+[[span class="criticismend-title"]]批評が終了した下書きリスト[[/span]]
+[[/div]]
+[[module ListPages tags="_criticism-end" category="draft" created_by="=" order="created_at desc" urlAttrPrefix="criticismend" perPage="10" separate="no"]]
+* %%title_linked%% (%%comments%%)
+[[/module]]
+[[/div]]
+[!-- デザイン変更不可要素 --]
+[[module css]]
+#u-startNo{
+    display:inline !important;
+}
+[[/module]]
+[[module ListPages category="draft" created_by="=" order="created_at desc" limit="1"]]
+[[%%content{0}%%module css]]
+#u-startNo{
+    display:none !important;
+}
+#u-newdraft .html-block-iframe {
+    width:100% !important;
+    height:3em !important;
+    -ms-overflow-style:none !important;
+}
+
+#u-newdraft .html-block-iframe::-webkit-scrollbar{
+    display:none !important;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+[[module css]]
+.system-undefined-draftList,
+.system-criticismin-draftList,
+.system-reforming-draftList,
+.system-criticismend-draftList
+{
+    display:none !important;
+}
+.system-portal-amount-warning{
+    display:none !important;
+}
+[[/module]]
+[[module ListPages category="draft" tags="-_criticism-in,-_reforming,-_criticism-end" created_by="=" limit="1"]]
+[[%%content{0}%%module css]]
+.system-undefined-draftList{
+display:block !important;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+[[module ListPages category="draft" tags="_criticism-in" created_by="=" limit="1"]]
+[[%%content{0}%%module css]]
+.system-criticismin-draftList{
+    display:block !important;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+[[module ListPages category="draft" tags="_reforming" created_by="=" limit="1"]]
+[[%%content{0}%%module css]]
+.system-reforming-draftList{
+    display:block !important;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+[[module ListPages category="draft" tags="_criticism-end" created_by="=" limit="1"]]
+[[%%content{0}%%module css]]
+.system-criticismend-draftList{
+    display:block !important;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+[[module css]]
+.lock~.system-userplace{
+display:none;
+}
+[[/module]]
+[[/div]]
+[[module ListPages category="portal" created_by="=" limit="1" range="others"]]
+[[%%content{0}%%module css]]
+.list-pages-box~.system-userplace {
+  display: none !important;
+}
+.system-userplace {
+  display: none !important;
+}
+#page-content>.system-portal-amount-warning {
+  display: block !important;
+  border: solid #000 3px !important;
+  width: 90% !important;
+  margin: auto !important;
+  border-radius: 10px !important;
+  filter: alpha(opacity=100) !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+}
+#page-content>.system-portal-amount-warning>.content {
+  display: blick !important;
+  background-color: #CC0 !important;
+  color: #000 !important;
+  border: solid #FFF 5px !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  filter: alpha(opacity=100) !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+}
+#page-content>.system-portal-amount-warning>.content>.list-pages-box>p>.title {
+  display: block !important;
+  text-align: center !important;
+  font-size: 250% !important;
+  padding: 5px 0px !important;
+  font-weight: bold !important;
+  filter: alpha(opacity=100) !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+}
+#page-content>.system-portal-amount-warning>.content>.list-pages-box {
+  display: block !important;
+  filter: alpha(opacity=100) !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+  color: #000;
+}
+#page-content>.system-portal-amount-warning p {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #000 !important;
+  font-size: 100% !important;
+  filter: alpha(opacity=100) !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+}
+.system-portal-amount-warning .content .list-pages-box, .system-portal-amount-warning .content .list-pages-box>p {
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.system-portal-amount-warning .content .list-pages-box a {
+  text-decoration: underline !important;
+  color: #000 !important;
+  font-size: 100%;
+}
+.system-portal-amount-warning .content ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.system-portal-amount-warning .content .list-pages-box a:hover {
+  font-weight: bold;
+}
+.system-portal-amount-warning .content .list-pages-box a.system-guid-link {
+  color: #000 !important;
+  text-decoration: none !important;
+  display: block !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  font-size: 150% !important;
+  width: 90% !important;
+  background: #eeeeee !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0) !important;
+  /* IE6-9 */
+  padding: 5px;
+  margin: auto;
+  -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) !important;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) !important;
+  -o-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) !important;
+  -ms-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) !important;
+}
+.system-portal-amount-warning .content .list-pages-box .system-guid-link:hover {
+  text-decoration: none !important;
+  font-weight: normal !important;
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4) !important;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4) !important;
+  -o-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4) !important;
+  -ms-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4) !important;
+}
+.system-portal-amount-warning .content .list-pages-box .system-guid-link:active {
+  -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) inset !important;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) inset !important;
+  -o-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) inset !important;
+  -ms-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4) inset !important;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+====
+[!--
+SCP-JPサンドボックスⅢへようこそ！
+ここはあなたのポータルページを編集する画面です。この入力ウィンドウの右下にある「Save(保存)」ボタンを押すことでポータルページの作成が完了します。
+
+この文章はポータルページに表示されませんが、邪魔であれば削除していただいて構いません。
+
+！注意！
+このページはポータルページです。このページに下書きを入力しても批評を募集することはできません。
+下書きページの作成方法はサンドボックスⅢの利用ガイドを参照してください。
+--]
+
+
+[[iftags]]
+
+[[code type="HTML"]]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <title>Auto Numbering Draft Creater</title>
+</head>
+<style>
+    @import url("https://scp-jp.github.io/files/util/common/styles/off-canvas.css");
+
+    body {
+        padding: 0;
+        background-color: transparent !important;
+    }
+
+    .fake-link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    #LinkSentence {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 580px) {
+        #LinkSentence {
+            font-size: 0.7em;
+        }
+    }
+
+    @media (min-width: 581px) {
+        #LinkSentence {
+            font-size: 27px;
+        }
+    }
+
+</style>
+<script type="text/javascript" src="https://scp-jp.github.io/files/util/sandbox/scripts/common/check-terminal.js"></script>
+<script type="text/javascript" src="https://scp-jp.wdfiles.com/local--code/scpmetatitlesearch/4"></script>
+<script type="text/javascript">
+
+    var mySite = "http://scp-jp-sandbox3.wikidot.com/"
+    var userName = "";
+    var accountnumber = "";
+    window.onload = function () {
+        var showLinkArea = document.getElementById("link");
+        var checkWidthElm = document.getElementById("LinkSentence");
+        var ElmLen = checkWidthElm.innerHTML.length;
+        if (userTerminalData.Os == "iOS") {
+            ElmLen++;
+        }
+        var defaultFontSize = Math.floor(getSentenceWidth() / ElmLen);
+        showLinkArea.style.fontSize = defaultFontSize + "px";
+        resizeLinkSentence();
+        var myURL = location.href;
+        var settingParamName = {
+            name: "name=",
+            createdBy: "createdBy=",
+            currentdraft: "currentdraft=",
+            accountname: "accountname=",
+            accountnum: "accountnum="
+        }
+        var settingParam = {
+            name: "",
+            createdBy: "",
+            currentdraft: "",
+            accountname: "",
+            accountnum: ""
+        }
+
+        if (myURL.indexOf("#") > 0) {
+            var tmpURLArray = ((myURL.split("#"))[1]).split(",");
+            for (var i = 0; i < tmpURLArray.length; i++) {
+                for (var j in settingParam) {
+                    if (tmpURLArray[i].indexOf(settingParamName[j]) == 0) {
+                        settingParam[j] = decodeURIExtension(tmpURLArray[i].split(settingParamName[j]).join(""));
+                        delete settingParamName[j];
+                        break;
+                    }
+                }
+            }
+        }
+        var pageName = settingParam.name;
+        accountnumber = settingParam.accountnum;
+        pageName = pageName.toLowerCase();
+        var baseName = settingParam.currentdraft.replace("draft:","");
+        baseName = baseName.toLowerCase();
+        var testRegex = new RegExp("^" + settingParam.createdBy);
+        if (baseName.match(testRegex)) {
+            baseName = baseName.replace(testRegex, "");
+        } else {
+            testRegex = new RegExp("^" + setEscapeCode(settingParam.accountname));
+            if (baseName.match(testRegex)) {
+                baseName = baseName.replace(testRegex, "");
+            }
+        }
+        testRegex = null;
+        if (baseName.match(/^\-/g)) {
+            baseName = baseName.replace(/^\-/g, "");
+        }
+        baseName = baseName.replace(/[^a-z0-9:\]\[]/g, "-");
+        while (baseName.indexOf("--") >= 0) {
+            baseName = baseName.replace(/--/g, "-");
+        }
+        userName = settingParam.createdBy;
+        baseName = baseName + "-";
+        var nowNo = baseName;
+        if (nowNo.indexOf("-") >= 0) {
+            nowNo = (nowNo.split("-"))[0];
+        } else {
+            nowNo = "1";
+        }
+        nowNo = parseInt(nowNo);
+        if (isNaN(nowNo)) {
+            nowNo = "";
+        } else {
+            nowNo++;
+            nowNo += "-";
+        }
+        var unique = "";
+        var digit = 0;
+        for (var i = 0; i < 4; i++) {
+            digit = Math.floor(Math.random() * 16);
+            unique += digit.toString(16);
+        }
+        var Links = document.createElement("span");
+        Links.setAttribute("onclick", "GoToLink('" + mySite + "draft:" + settingParam.createdBy + "-" + nowNo + unique + "/title/" + settingParam.name + "-" + nowNo + "-" + unique + "/parentPage/portal:" + settingParam.createdBy + "/#_editpage');");
+        Links.setAttribute("class", "fake-link");
+        Links.setAttribute("id", checkWidthElm.getAttribute("id"));
+        Links.innerHTML = checkWidthElm.innerHTML;
+        showLinkArea.replaceChild(Links, checkWidthElm);
+        checkWidthElm = Links;
+        window.addEventListener('resize', function (event) {
+            resizeLinkSentence();
+        });
+
+        function getSentenceWidth() {
+            var left = checkWidthElm.getBoundingClientRect().left;
+            var right = checkWidthElm.getBoundingClientRect().right;
+            return (right - left);
+        }
+
+        function resizeLinkSentence() {
+
+            var pageWidth = window.innerWidth;
+
+            var fontSize = 0;
+            fontSize = Math.floor(pageWidth / ElmLen);
+            if (fontSize > defaultFontSize) {
+                fontSize = defaultFontSize;
+            }
+            showLinkArea.style.fontSize = fontSize + "px";
+            var fontHeight = fontSize;
+            if (userTerminalData.Os == "iOS") {
+                fontHeight = Math.floor(pageWidth / (ElmLen - 1));
+                if (fontHeight > defaultFontSize) {
+                    fontHeight = defaultFontSize;
+                }
+                fontHeight += 5;
+            }
+            var inHeight = window.innerHeight;
+            inHeight -= (fontHeight + 5);
+
+        }
+
+    }
+
+    function GoToLink(url) {
+        var userNameL;
+        try {
+            userNameL = accountnumber;
+        } catch (e) {
+            alert("サインイン未取得");
+            return;
+        }
+        if (userName == userNameL) {
+            window.parent.location.href = url;
+        } else {
+            alert("自分のポータルからページを作成してください");
+            console.log("pageCreate:" + userName + " , RequestUser:" + userNameL);
+        }
+    }
+
+</script>
+<body>
+<div id="link" style='font-size:200%; text-align: center;'>
+    <span id="LinkSentence">新しい下書きを作成する</span>
+</div>
+<div style="width:100%;height;1px"></div>
+</body>
+</html>
+[[/code]]
+[[/iftags]]

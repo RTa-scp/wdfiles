@@ -1,0 +1,43 @@
+[[div class="idea-lists"]]
+[[module ListUsers users="."]]
+[[include :smlt:boyu12:inc-loop c=__________|p=:efc:component:builder]]
+|content=[[module listpages offset="0" category="children-recycle21" created_by="%%name%%" wrapper="no" separate="no"{$g}]
+[[div_ class="%%created_by_id%%  li_%%index{$p}%"{$g}]
+[[div_ class="alert alert-danger lial_%%index{$p}%"{$g}]
+++* Warning!
+アイディアが5記事より多く投稿されています。
+[[/div{$g}]
+あなたのアイディア:
+%%index{$p}%記事投稿済み
+[[/div{$g}]\
+
+[[%%content{0}%%module css{$g}]
+div[class*="%%created_by_id%%"] {
+  display: none;
+}
+[[%%content{0}%%/module{$g}]
+[[/module{$g}]|g=]|p=%]]
+[[/module]]
+[[/div]]
+
+
+[[module ListUsers users="."]]
+[[include :smlt:boyu12:inc-loop c=__________|p=:efc:component:builder]]
+|content=[[module ListPages created_by="%%name%%" category="children-recycle21"  wrapper="no" separate="no" {$g}]
+* [/%%fullname{$p}% %%form_raw{title}{$p}%] (%%created_at{$p}%)
+[[/module{$g}]|g=]|p=%]]
+[[/module]]
+
+[[module css]]
+.idea-lists>div:last-child {
+  display: block;
+}
+.lial_1, .lial_2, .lial_3, .lial_4, .lial_5 {
+  display:none;
+}
+.alert.alert-danger {
+  color: aliceblue;
+  background-color: #f44336;
+  padding: 1em;
+}
+[[/module]]

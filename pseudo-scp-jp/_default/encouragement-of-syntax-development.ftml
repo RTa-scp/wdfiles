@@ -1,0 +1,211 @@
+[[toc]]
+@@@@
+-----
++ 1: 前書き
+-----
+これを読んでいる貴方は，構文を触ったことがありますか?
+構文を作成することに「こうするべし」というものはありません．自由に作りましょう．ただし，CCLには気を付けて．いやマジで．ライセンスはしっかり書こう．
+ここでは，私が構文を作るときに念頭に置いていること，こういうことができると覚えておいた方がいいものを書き記しています．
+もしここに書かれているものに興味が湧けばすぐに個人サイトなどで実験することをお勧めします．
+@@@@
+
+@@@@
+-----
++ 2: 知識
+-----
+@@@@
+
+@@@@
+-----
+++ 2.1: Expressions
+-----
+@@@@
+@@@@
+-----
++++ 2.1.1: expr
+-----
+@@@@
+[[code]]
+[[#expr (5>3)+0 ]] return "1"
+[[#expr (5<3)+0 ]] return "0"
+[[/code]]
+
+[[#expr (5>3)+0 ]] return "1"
+[[#expr (5<3)+0 ]] return "0"
+
+@@@@
+-----
++++ 2.1.2: if
+-----
+@@@@
+
+[[code]]
+[[#if true | true ]]
+[[#if false | true | false ]]
+[[/code]]
+
+[[#if true | true ]]
+[[#if false | true | false ]]
+
+
+@@@@
+-----
++++ 2.1.3: ifexpr
+-----
+@@@@
+[[code]]
+[[#ifexpr !(false)          | NOT expr ]]
+[[#ifexpr (true)*(true)     | AND expr ]]
+[[#ifexpr (true)+(false)    | OR  expr ]]
+[[#ifexpr min(true,true)    | AND expr ]]
+[[#ifexpr max(true,false)   | OR  expr ]]
+[[#ifexpr !(true)!=!(false) | XOR expr ]]
+[[/code]]
+
+[[#ifexpr !(false)          | NOT expr ]]
+[[#ifexpr (true)*(true)     | AND expr ]]
+[[#ifexpr (true)+(false)    | OR  expr ]]
+[[#ifexpr min(true,true)    | AND expr ]]
+[[#ifexpr max(true,false)   | OR  expr ]]
+[[#ifexpr !(true)!=!(false) | XOR expr ]]
+
+@@@@
+-----
+++ 2.2: コメントアウト
+-----
+@@@@
+
+@@@@
+-----
++++ 2.2.1: @@[!----]@@
+-----
+@@@@
+[[>]]
+-> 発展: [[[how-to-unite-components|]]]
+[[/>]]
+
+@@@@
+-----
++++ 2.2.2: iftags
+-----
+@@@@
+
+[[code]]
+[[iftags]] Super Commentout (Hide Always) [[/iftags]]
+[[iftags - ]] Show Always [[/iftags]]
+[[iftags + ]] Hide Always [[/iftags]]
+[[iftags [[#if true | - ]]      ]] OR  expr [[/iftags]]
+[[iftags [[#if true |  | + ]] - ]] AND expr [[/iftags]]
+[[/code]]
+
+[[iftags]] Super Commentout (Hide Always) [[/iftags]]
+[[iftags - ]] Show Always [[/iftags]]
+[[iftags + ]] Hide Always [[/iftags]]
+[[iftags [[#if true | - ]]      ]] OR  expr [[/iftags]]
+[[iftags [[#if true |  | + ]] - ]] AND expr [[/iftags]]
+[[>]]
+-> 発展: [[[single-depth-include|]]]
+-> 発展: [[[how-to-unite-components|]]]
+[[/>]]
+
+@@@@
+-----
+++ 2.3: 日付
+-----
+@@@@
+++++* 前提知識
+date構文，ListPages系のモジュールの日付は全て
+[[div_ class="code"]]
+<[[span class="hl-reserved"]]span[[/span]] [[span class="hl-var"]]class[[/span]]="[[span class="hl-string"]]odate time_1237135440 format_%25c[[/span]]" [[span class="hl-var"]]style[[/span]]="[[span class="hl-string"]]display: inline;[[/span]]">2009/3/16 1:44:00</[[span class="hl-reserved"]]span[[/span]]>
+----
+[[span class="hl-identifier"]].odate[[/span]] {
+[[span class="hl-code"]]@@  @@[[/span]][[span class="hl-reserved"]]display:[[/span]] [[span class="hl-string"]]none[[/span]];
+}
+[[/div]]のように，[[div_ class="code"]]
+<[[span class="hl-reserved"]]span[[/span]] [[span class="hl-var"]]class[[/span]]="[[span class="hl-string"]]odate time_//##red|UNIX_TIME##// format_//##magenta|FORMAT##//[[/span]]" [[span class="hl-var"]]style[[/span]]="[[span class="hl-string"]]display: inline;[[/span]]">//##darkorange|Time in accordance with format##//</[[span class="hl-reserved"]]span[[/span]]>
+[[/div]]といった形のHTMLをレンダリングします．
+その為，日付などの処理をWikidot nativeで行うことは一部例外を除いて不可能です．
+[[span class="dblock"]]
+ListPagesなどでUNIX_TIMEとかが出力出来たらよかったんですけどね．それか，そもそもspan_を作らないか．
+後は頼むから，format指定の時にパイプ({{|}})を使わないで欲しいなあと．includeの時に使えない……．
+[[/span]]
+@@@@
+-----
++++ 2.3.1: date
+-----
+@@@@
+@@@@
+-----
++++ 2.3.2: %%created_at%%, %%updated_at%%
+-----
+@@@@
+
+
+
+
+@@@@
+-----
+++ 2.4: Module
+-----
+@@@@
+@@@@
+-----
++++ 2.4.1: Module ListPages
+-----
+@@@@
+@@@@
+-----
++++ 2.4.2: Module ListUsers
+-----
+@@@@
+@@@@
+-----
++++ 2.4.3: Module Feeds
+-----
+@@@@
+
+
+
+@@@@
+-----
+++ 2.5: Others
+-----
+@@@@
+@@@@
+-----
++++ 2.5.1: User
+-----
+@@@@
+
+
+[[module css]]
+.breadcrumbs {
+  margin: -1em 0 1em;
+  font-size: 85%;
+}
+:root {
+  --title-colour: #333;
+}
+h1 {
+  color: var(--title-colour);
+  font-family: Arial,sans-serif;
+  font-size: 250%;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+#header h1 {
+  font-size: 190%;
+}
+#page-content > h2 {
+  color: var(--title-colour);
+  font-family: Arial,sans-serif;
+  font-size: 150%;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+#page-content > hr {
+  margin: 0;
+}
+[[/module]]

@@ -1,0 +1,1296 @@
+[[div_ class="mobile-top"]]
+[[div]]
+[[div class="s"]]
+[[module Search mini="true"]]
+[[/div]]
+[[a_ href="/" class="t"]]
+PAMWACWiki[[/a]]
+[[/div]]
+[[/div]]
+
+[[div class="c-side"]]
+[[div_ class="nav-side"]]
+[[ul]][[li class="folded"]][[ul]]_[[/ul]]\
+[[div_ class="side-link foldable-list-container"]]
+[[span class="close-menu"]][#  ][[/span]]\
+[[div_ class="open-menu"]]
+[# ≡]
+[[/div]][[/div]]
+[[div_ class="side-bar"]]
+[[div class="newbies-side-block"]]
+[[collapsible show="最初にお読みください" hide="新しいメンバー向け情報"]]
+[[[about-the-scp-foundation|SCP財団とは]]]
+[[[FAQ]]]
+[[[Site Rules|サイトルール]]]
+[[[Licensing Guide|ライセンスガイド]]]
+[[[guide-for-newbies|サイトへの参加を希望される方へ]]]
+[[/collapsible]]
+[[/div]]
+----
+[[div class="side-block"]]
+[[div class="menu"]]
+[[div class="heading"]]
+[[a href="/" style="color: #0000ee;"]]メインページ[[/a]]
+[[/div]]
+[[/div]]
+@@@@
+@@@@
+[[div class="menu"]]
+[[div class="heading"]]
+»SCPデータベース
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-jp-3|シリーズJP-III]]] [[span class="sub-text"]](2000-JP-2999-JP)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-jp-2|シリーズJP-II]]] [[span class="sub-text"]](1000-JP-1999-JP)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-jp|シリーズJP-I]]] [[span class="sub-text"]](001-JP-999-JP)[[/span]]
+[[/div]]
+[[/div]]
+
+[[div class="menu"]]
+[[div class="heading"]]
+»SCPライブラリ
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-6|シリーズVI]]] [[span class="sub-text"]](5000-5999)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-5|シリーズV]]] [[span class="sub-text"]](4000-4999)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-4|シリーズIV]]] [[span class="sub-text"]](3000-3999)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-3|シリーズIII]]] [[span class="sub-text"]](2000-2999)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series-2|シリーズII]]] [[span class="sub-text"]](1000-1999)[[/span]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-series|シリーズI]]] [[span class="sub-text"]](001-999)[[/span]]
+[[/div]]
+[[/div]]
+[[div class="menu"]]
+[[div class="menu-item"]]
+[[[foundation-tales-jp|Tales-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[canon-hub-jp|カノン-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[series-hub-jp|連作-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[collaboration-hub-jp|合作-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[foundation-tales|Tales]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[canon-hub|カノン]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-international|SCP国際版]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[goi-formats|GoIフォーマット一覧]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[goi-formats-jp|GoIフォーマット-JP一覧]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[international-goi-formats|GoIフォーマット国際版]]]
+[[/div]]
+[[div class="menu-item"]]
+[[collapsible show="その他のSCPライブラリ" hide="その他のSCPライブラリ"]]
+[[div class="menu-item"]]
+[[[heritage-collection-jp|殿堂入りコレクション-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[joke-scps-jp | Joke SCP-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[archived-scps-jp | Archived SCP-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-jp-ex|Explained SCP-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[log-of-anomalous-items-jp | Anomalousアイテム記録-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[log-of-extranormal-events-jp |超常現象記録-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[http://scp-jp.wikidot.com/log-of-unexplained-locations-jp|未解明領域記録-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[contest-archive-jp |コンテストアーカイブ-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[joke-scps | Joke SCP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[archived-scps | Archived SCP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[scp-ex|Explained SCP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[log-of-anomalous-items | Anomalousアイテム記録]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[log-of-extranormal-events | 超常現象記録]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[log-of-unexplained-locations | 未解明領域記録]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[incident-reports-eye-witness-interviews-and-personal-logs | 事件ファイル]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[audio-adaptations | 音声記録]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[creepy-pasta | Creepy Pasta保管]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[contest-archive|コンテストアーカイブ国際版]]]
+[[/div]]
+[[/collapsible]]
+[[/div]]
+[[/div]]
+[[div class="menu"]]
+[[div class="heading"]]
+»サイト
+[[/div]]
+[[div class="menu-item"]]
+[[[system:recent-changes|最近の更新]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[Most Recently Created|最近作成された記事]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[Most Recently Edited|最近編集された記事]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[random:random-page|ランダムページ]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[Top Rated Pages|評価の高い記事]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[Lowest Rated Pages|評価の低い記事]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[top-rated-pages-en|評価の高い記事-EN]]]
+[[/div]]
+[[/div]]
+
+[[div class="menu"]]
+[[div class="heading"]]
+»コミュニティ
+[[/div]]
+[[div class="menu-item"]]
+[[[guide-hub|ガイド]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[other-link-hub|お役立ちリンク集]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[members-pages-jp|著者ページ-JP ]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[international-members-pages|著者ページ国際版]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[artwork-jp|アートワーク-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[international-artwork|アートワーク国際版]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[forum:start|フォーラム]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[forum:recent-posts|最近の投稿]]]
+[[/div]]
+[[div class="menu-item"]]
+[[a href="http://scp-jp-sandbox3.wikidot.com/forum:recent-posts" ]]最近の下書き批評[[/a]]
+[[/div]]
+[[div class="menu-item"]]
+[[[discord-guideline|チャット(Discord)]]]
+[[/div]]
+[[div class="menu-item"]]
+[[a href="http://ja.scp-wiki.net/meet-the-staff-jp" ]]スタッフ一覧[[/a]]
+[[/div]]
+[[/div]]
+
+[[div class="menu"]]
+[[div class="heading"]]
+»執筆
+[[/div]]
+[[div class="menu-item"]]
+[[[how-to-write:how-to-write|]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[tag-guide|タグガイド]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[tag-list|タグリスト]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[wiki-syntax:startpage|Wikidotシンタックス]]]
+[[/div]]
+[[/div]]
+
+[[div class="menu"]]
+[[div class="heading"]]
+»世界観
+[[/div]]
+[[div class="menu-item"]]
+[[[object-classes | オブジェクトクラス]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[security-clearance-levels | セキュリティ&クリアランス]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[groups-of-interest | 要注意団体]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[secure-facilities-locations | セキュリティ施設]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[task-forces | 機動部隊]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[groups-of-interest-jp | 要注意団体-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[secure-facilities-locations-jp|セキュリティ施設-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[task-forces-jp|機動部隊-JP]]]
+[[/div]]
+[[div class="menu-item"]]
+[[[locations-of-interest-jp|要注意領域-JP]]]
+[[/div]]
+[[/div]]
+
+[[div class="menu"]]
+[[div class="heading"]]
+»リンク
+[[/div]]
+[[div class="menu-item"]]
+[*http://www.scp-wiki.net/ SCP Foundation]
+[[/div]]
+[[div class="menu-item"]]
+[*http://05command-ja.wikidot.com/ 財団日本支部理事会]
+[[/div]]
+[[div class="menu-item"]]
+[[[links | リンク一覧]]]
+[[/div]]
+[[div class="menu-item"]]
+[*http://scp-int.wikidot.com/ SCP-INT]
+[[/div]]
+[[div class="menu-item"]]
+[*http://scp-jp-storage.wikidot.com/ ファイルストレージ]
+[[/div]]
+[[div class="menu-item"]]
+[*http://scp-jp-sandbox3.wikidot.com/start サンドボックスⅢ]
+[[/div]]
+[[div class="menu-item"]]
+[*http://scp-jp-sandbox2.wikidot.com/start (サンドボックス)]
+[[/div]]
+[[div class="menu-item"]]
+--[*http://scpsandbox-jp.wikidot.com/start (旧サンドボックス)]--
+[[/div]]
+[[div class="menu-item"]]
+[*http://scpper.com/ ScpperDB]
+[[/div]]
+[[div class="menu-item"]]
+[*https://discord.gg/zeEwVG7 SCP-JP 運営Discord]
+[[/div]][[/div]]
+[[/div]]
+----
+
+[[div class="admin-side-block"]]
+[[collapsible show="管理" hide="管理"]]
+[/_admin サイトマネージャ]
+[[[system:list-all-pages|すべてのページ]]]
+[[[system:members|サイトメンバー一覧]]]
+[[[component:feature-and-news|注目記事・ニュース]]]
+[[[nav:side|サイド]]] | [[[nav:top|トップ]]] | [[[component:theme|テーマ]]]
+[[/collapsible]]
+[[/div]]
+[[div class="scpnet-interwiki-wrap"]]
+[[div class="scpnet-interwiki-wrapper"]]
+[[include :rtas:interwiki |lang=jp|cssurl=http://pseudo-scp-jp.wdfiles.com/local--code/theme%3Aaniwotawiki/1]]
+[[/div]][[/div]]
+
+[[a href="#e" class="close-menu"]]\
+[[image nav:side/blank.png style="z-index:-1;opacity:0.3"]]\
+[[/a]]
+
+[[/div]][[/li]][[/ul]][[/div]]
+[[/div]]
+[[div_ class="c-footer"]]
+[[div_ class="footer-links"]]
+[# このWikiのTOPへ][# 全ページ一覧][# PAMWACWiki TOP][# 利用規約][# プライバシーポリシー]
+[[/div]]
+[[div_ class="credit"]]
+[[module ListPages limit="1" range="." wrapper="no" separate="no"]]
+%%updated_at|%Y%% PAMWACWiki.
+No reproduction or republication without written permission / [*http://creativecommons.org/licenses/by-sa/3.0 CC BY-SA 3.0]
+[[/module]][[/div]]
+[[/div]]
+[[module css]]
+@import url(https://pseudo-scp-jp.wdfiles.com/local--code/theme:aniwotawiki/1);
+[[/module]]
+
+[[iftags]]
+[[code type="CSS"]]
+@import url(https://fonts.googleapis.com/css2?family=Handlee&display=swap);
+
+:root {
+  --green-accent: 0, 110, 84;
+  --grey-accent: 51, 51, 51;
+  --light-green-accent: 197, 225, 165;
+  --light-gray-accent: 221, 221, 221;
+  --content-bg-color: 249, 249, 249;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+div#container-wrap {
+  height: 140px;
+  background: #fff;
+}
+#container {
+  background-color: #fdfdfd;
+}
+#content-wrap {
+  margin: 0;
+  max-width: unset;
+}
+#main-content {
+  position: static;
+  padding-bottom: 100px;
+  margin: 0 0 0 21.25em;
+  font-family: arial, helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "MS Pゴシック", clean, sans-serif;
+}
+#page-content {
+  padding: 1em;
+}
+@media (min-width: 768px) {
+  #main-content {
+    margin: 10px 0 0 21.25em;
+    box-shadow: -17em -10px #f5f5f5, 0 -10px #f5f5f5;
+  }
+  #page-content {
+    margin: auto;
+  }
+}
+
+#header {
+  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2577572-329-6typ/yomekoproto.png) no-repeat 0px 15px;
+  background-color: #fdfdfd;
+  border-bottom: 5px solid #000;
+  width: 100%;
+  max-width: none;
+  background-size: 115px;
+  padding-bottom: 0;
+    margin-top: 48px;
+}
+#login-status, #login-status a {
+  color: #ff6b33;
+}
+
+#header h1 a {
+  text-shadow: none;
+  font-family: verdana, arial, helvetica, sans-serif;
+  padding: 65px 0 25px;
+  color: #0000cd;
+  font-size: 160%;
+}
+#header h1 a span {
+  display: none;
+}
+#header h1 a:before {
+  content: 'PAMWACWiki(仮)';
+}
+#header h2 {
+  text-shadow: none;
+  font-size: 115%;
+  color: #0000cd;
+}
+#header h2 span {
+  display: none;
+}
+#header h2:before {
+  content: 'パラヲタクの集い';
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  #header h1, #header h2 {
+    margin-left: 120px;
+  }
+  #header h1 a {
+    font-size: 80%;
+    padding-bottom: 10px;
+  }
+  #header h2 {
+    font-size: 100%;
+  }
+  #header h1 a, #header h2 {
+    color: #333;
+  }
+}
+@media (max-width: 479px){
+  #header {
+    background: none;
+  }
+  #header h1, #header h2 {
+    margin-left: 20px;
+  }
+  #header h1 a {
+    font-size: 80%;
+    padding-bottom: 10px;
+  }
+  #header h2 {
+    font-size: 100%;
+  }
+  #header h1 a, #header h2 {
+    color: #333;
+  }
+}
+/*===========================================*/
+/*===========================================*/
+/*===========================================*/
+/*
+Created by 7happy7
+http://topia.wikidot.com/wikipedia
+2019
+CC BY-SA 3.0
+
+Modified by RTa_technology
+2022
+*/
+/*============= fixed top ==============*/
+
+.mobile-top {
+  background-color: #444;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 100;
+}
+.mobile-top>div {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  max-width: max(calc(100vw - 100px), 1020px)!important;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.mobile-top>div>div.s {
+  height: 2.3rem;
+  position: relative;
+  right: 0;
+}
+.mobile-top>div>div.s .text {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23f5f5f5%22%20fill-rule%3D%22evenodd%22%20d%3D%22M16.474%2015.44c1.147-1.375%201.835-3.21%201.835-5.16a7.98%207.98%200%200%200-8.03-8.03%207.98%207.98%200%200%200-8.03%208.03%207.98%207.98%200%200%200%208.03%208.03c1.72%200%203.21-.46%204.47-1.378l4.473%204.474c.46.46%201.262.46%201.836%200l.69-.688-5.278-5.277zm-11.93-5.16c0-3.21%202.524-5.735%205.735-5.735%203.21%200%205.732%202.524%205.732%205.735%200%203.212-2.524%205.736-5.736%205.736-3.212%200-5.736-2.638-5.736-5.736z%22%2F%3E%3C%2Fsvg%3E');
+  background-position: left 6px center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-color: #696969;
+  color: #f5f5f5;
+  border: none;
+  font-size: 16px;
+  height: 2rem;
+  padding-left: 30px;
+  max-width: 40vw;
+}
+@media (max-width: 767px) {
+  .mobile-top {
+    z-index: 10;
+  }
+  .mobile-top>div>div.s .text {
+    background-color: #f6ad49;
+  }
+  .mobile-top {
+    background-color: #f6ad49;
+  }
+  .mobile-top>div>div.s .text:not(:focus-within) {
+    background-color: transparent;
+    background-position: center;
+    background-size: 1.6rem;
+    max-width: 0;
+    padding-left: 1.6rem;
+  }
+}
+.mobile-top>div>div.s .button {
+  display: none;
+}
+.mobile-top>div>div.s~* {
+  opacity: 1;
+  transition: all 0.05s ease-in-out;
+}
+.mobile-top>div>div.s:focus-within:before {
+  content: "";
+  background-color: rgba(255, 255, 255, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.mobile-top>div>div.s:focus-within~* {
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-top>div>a.t {
+  display: block;
+  margin-right: 4rem;
+  max-width: 50vw;
+  left: 0;
+  color: #f5f5f5;
+  font-family: 'Handlee', cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/*===========================================*/
+/*===========================================*/
+/*===========================================*/
+/*
+Created by Boyu12
+http://efc.wikidot.com/nav:side
+2019
+CC BY-SA 3.0
+
+Modified by RTa_technology
+2021
+*/
+/*============= Custom sidebar ==============*/
+
+#side-bar {
+  display: none;
+}
+#page-content .nav-side>ul, #page-content .nav-side>ul>li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+}
+#page-content .nav-side>ul>li>ul {
+  display: none;
+}
+#page-content .nav-side .side-link {
+  display: none;
+}
+#page-content .nav-side .menu-fold .foldable-list-container {
+  display: none;
+}
+@supports (position:sticky) or (position:-webkit-sticky) {
+  @media (min-width: 768px) {
+    #page-content .c-side {
+      bottom:0;
+      background: #444444;
+    }
+    #page-content .nav-side {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 48px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      margin: auto;
+      padding: 10px 12px 0 12px;
+      height: 100vh;
+      background-color: #f5f5f5;
+      border-right: 7px double lightgrey;
+    }
+    #page-content .nav-side {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    #page-content .nav-side::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+@media (max-width:767px) {
+  @supports (pointer-events: none) {
+    #page-content .c-side .side-link .close-menu a {
+      -webkit-transition:left 0s 0.6s, opacity 0.5s ease-in-out 0.1s;
+      -moz-transition: left 0s 0.6s, opacity 0.5s ease-in-out 0.1s;
+      transition: left 0s 0.6s, opacity 0.5s ease-in-out 0.1s;
+    }
+    #page-content .c-side .folded>.side-link .close-menu a {
+      pointer-events: none;
+    }
+  }
+  #main-content {
+    margin: 2em;
+    padding: 0 0 100px 0;
+    max-width: unset;
+  }
+  #page-content .c-side {
+    position: static;
+    z-index: auto;
+    overflow: visible;
+    padding: 0;
+    height: auto;
+  }
+  #page-content .c-side .side-bar {
+    position: fixed;
+    top: 0;
+    left: -26em;
+    z-index: 10;
+    display: block;
+    float: none;
+    clear: none;
+    overflow: auto;
+    margin: 0;
+    padding: 1em 1em 0 1em;
+    width: 17rem;
+    height: 100%;
+    border: 0;
+    background-color: #f5f5f5;
+    -webkit-transition: left 0.5s ease-in-out 0.1s;
+    -moz-transition: left 0.5s ease-in-out 0.1s;
+    transition: left 0.5s ease-in-out 0.1s;
+  }
+  #page-content .c-side .side-bar:after {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+  }
+  #page-content .c-side .side-link {
+    position: absolute;
+    z-index: 10;
+    display: block;
+  }
+  #page-content .c-side .side-link .open-menu a {
+    -webkit-transition: opacity 0.5s ease-in-out 0.1s;
+    -moz-transition: opacity 0.5s ease-in-out 0.1s;
+    transition: opacity 0.5s ease-in-out 0.1s;
+  }
+  #page-content .c-side .side-link .close-menu {
+    display: inline;
+  }
+  #page-content .c-side .side-link .close-menu a {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+  }
+  #page-content .c-side .unfolded>.side-bar {
+    left: 0;
+  }
+  #page-content .c-side .unfolded>.side-link .open-menu a {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #page-content .c-side .unfolded>.side-link .close-menu a {
+    left: 0;
+    opacity: 0.3;
+    -webkit-transition: left 0s 0.1s, opacity 0.5s ease-in-out 0.1s;
+    -moz-transition: left 0s 0.1s, opacity 0.5s ease-in-out 0.1s;
+    transition: left 0s 0.1s, opacity 0.5s ease-in-out 0.1s;
+  }
+  #top-bar .open-menu {
+    display: none;
+  }
+  /* Menu Fold link */
+  #page-content .c-side .menu-fold>a {
+    visibility: hidden;
+  }
+  #page-content .c-side .menu-fold .foldable-list-container {
+    position: relative;
+    display: block;
+    height: 0;
+  }
+  #page-content .c-side .menu-fold .foldable-list-container:before {
+    position: relative;
+    bottom: -2px;
+    visibility: hidden;
+    margin-right: 2px;
+    width: 13px;
+    height: 13px;
+    border: 0;
+    content: url(http://rtas.wikidot.com//local--files/nav:side/blank.png);
+  }
+}
+#page-content .nav-side>ul, #page-content .nav-side>ul>li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+}
+#page-content .nav-side>ul>li>ul {
+  display: none;
+}
+#page-content .side-link {
+  display: none;
+}
+#page-content .menu-fold .foldable-list-container {
+  display: none;
+}
+.heading {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+.heading p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.menu-item a {
+  color: #0000ee;
+}
+.menu-item {
+  margin-left: 20px;
+  color: #d3d3d3;
+}
+.c-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  clear: left;
+  margin: 0;
+  padding: 0;
+  width: 17rem;
+  z-index: 10;
+}
+.c-side .newbies-side-block .collapsible-block-link, .c-side .admin-side-block .collapsible-block-link {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+.c-side .newbies-side-block .collapsible-block-link {
+  font-size: 1.4em;
+}
+.c-side .newbies-side-block a, .c-side .admin-side-block a {
+  color: #0000ee;
+  font-weight: bold;
+}
+.c-side .newbies-side-block, .c-side .admin-side-block {
+  padding: 0.1px 10px;
+  text-align: left;
+  font-size: 12.8px;
+}
+.c-side .menu-item p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-side .menu .menu-item .collapsible-block-link {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.c-side .menu .menu-item .collapsible-block-link:before {
+  content: "\f067\A";
+}
+.c-side .menu .menu-item .collapsible-block-unfolded .collapsible-block-link:before {
+  content: "\f068\A";
+}
+.scpnet-interwiki-wrap {
+  height: 5em;
+}
+.open-menu a {
+  border: 0.2em solid #ff6b33 !important;
+  border-radius: 0;
+  color: #ff6b33 !important;
+}
+.c-side .menu-item a {
+  color: #0000ee;
+}
+/*==============================*/
+#search-top-box {
+  display: none;
+}
+
+/*=== http://rtas.wikidot.com/_memo:start/name/3 ===*/
+
+/*==============================*/
+.mobile-top>div>div.s .text:-webkit-autofill, .mobile-top>div>div.s .text:-webkit-autofill:hover, .mobile-top>div>div.s .text:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #444444 inset !important;
+    color: #f5f5f5 !important;
+    -webkit-text-fill-color: #f5f5f5 !important;
+    -webkit-transition: background-color 9999s, -webkit-box-shadow 9999s , color 9999s, -webkit-text-fill-color 9999s !important;
+    transition: background-color 9999s, -webkit-box-shadow 9999s , color 9999s, -webkit-text-fill-color 9999s !important;
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+.mobile-top>div>div.s .text:-webkit-autofill, .mobile-top>div>div.s .text:-webkit-autofill:hover, .mobile-top>div>div.s .text:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #f6ad49 inset !important;
+    color: #f5f5f5 !important;
+    -webkit-text-fill-color: #f5f5f5 !important;
+    -webkit-transition: background-color 9999s, -webkit-box-shadow 9999s , color 9999s, -webkit-text-fill-color 9999s !important;
+    transition: background-color 9999s, -webkit-box-shadow 9999s , color 9999s, -webkit-text-fill-color 9999s !important;
+    font-size: 16px;
+}
+}
+/*==============================*/
+
+#top-bar {
+  display: none;
+}
+/*===========================================*/
+
+/*===========================================*/
+
+/*=============== FOOTER ====================*/
+
+#action-area, #page-options-container, #action-area {
+  padding: 0 0 30px 2%;
+  width: 95%;
+}
+#footer {
+  position: relative;
+  top: -2em;
+  margin-top: 0;
+  z-index: 10;
+}
+@media (min-width: 411px) and (max-width: 767px) {
+  #footer {
+    top: -3em;
+    z-index: 9;
+  }
+}
+@media (max-width: 410px) {
+  #footer {
+    top: -4em;
+  }
+}
+/*===========================================*/
+
+/*===========================================*/
+
+/*======= Modified from BHL theme ===========*/
+
+/* https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css */
+
+/*
+[2019 Wikidot Theme]
+Designed by Woedenaz, Croquembouche, & djkaktus
+Built by Woedenaz, Croquembouche, aismallard & rounderhouse for some reason
+*/
+
+/*============= CC BY-SA 3.0 ================*/
+
+.yui-navset * {
+  -webkit-transition: background-color 80ms cubic-bezier(.4, 0, .2, 1), color 80ms cubic-bezier(.4, 0, .2, 1);
+  transition: background-color 80ms cubic-bezier(.4, 0, .2, 1), color 80ms cubic-bezier(.4, 0, .2, 1);
+}
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: calc(100% - .125rem);
+  border: 0;
+  box-shadow: 0 .3125rem 0 0 #fff;
+  zoom: unset;
+}
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+  border: unset;
+  background-color: #f6ad49;
+  background-image: none;
+  color: #fff;
+  zoom: unset;
+}
+.yui-navset .yui-nav a:focus, .yui-navset .yui-nav a:hover {
+  background: none;
+  background-color: #fffab6;
+  color: #484848;
+  zoom: unset;
+}
+.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  border-color: rgba(0, 0, 0, 0);
+  background-color: #f6ad49;
+  -webkit-box-shadow: 0 0 0 0.0625rem #fffab6;
+  box-shadow: 0 0 0 0.0625rem #fffab6;
+  zoom: unset;
+  -webkit-box-flex: 2;
+}
+.yui-navset-bottom .yui-nav li a, .yui-navset-top .yui-nav li a, .yui-navset .yui-nav li a {
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  vertical-align: bottom;
+  zoom: unset;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+  overflow: hidden;
+  padding: .35em .75em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.yui-navset .yui-nav li em {
+  border: unset !important;
+}
+.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+  margin: 0;
+  padding: 0;
+  background-color: #fffab6;
+  -webkit-box-flex: 2;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
+  border: rgba(0, 0, 0, 0);
+}
+.yui-navset .yui-nav .selected a {
+  width: 100%;
+  background: #fffab6;
+  color: #484848 !important;
+}
+.yui-navset .yui-nav .selected a:active, .yui-navset .yui-nav .selected a:focus {
+  background: none;
+  background-color: #fffab6;
+  color: #fff;
+}
+.yui-navset .yui-nav .selected a:hover {
+  background: #fffab6;
+  cursor: default;
+}
+.yui-navset .yui-content {
+  margin-bottom: 20px;
+  background-color: #e5e5e5;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, #ececec), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, #ececec), color-stop(.75, #ececec), color-stop(.75, transparent), to(transparent));
+  -webkit-background-size: 3px 3px;
+}
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+  border: none;
+}
+.yui-navset-left .yui-content {
+  border: none;
+}
+.yui-navset .yui-content:after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #fffab6;
+  color: #f6ad49;
+  content: "　･･･";
+  vertical-align: top;
+  font-weight: bold;
+  font-size: .2em;
+  line-height: 8px;
+}
+/*===========================================*/
+
+/*============ Rate box (Credit) ~===========*/
+.creditRate.creditModule {
+  margin-right: unset;
+}
+.rate-box-with-credit-button {
+  position: relative;
+}
+.page-rate-widget-box {
+  box-shadow: 1px 1px 3px #ffba61, -1px -1px 3px #ffba61, inset 1px 1px 3px transparent, inset -1px -1px 3px transparent;
+}
+.page-rate-widget-box .rate-points {
+  border: 1px solid #f6ad49;
+  background-color: #f6ad49 !important;
+  color: #ffffff;
+}
+.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+  border-top: 1px solid #f6ad49;
+  border-bottom: 1px solid #f6ad49;
+  background-color: #fffab6;
+}
+.page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
+  color: #f6ad49;
+}
+.page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {
+  background: #ffee01;
+  color: #f6ad49;
+}
+.page-rate-widget-box .cancel {
+  border: 1px solid #f6ad49;
+  background-color: #f6ad49;
+}
+.page-rate-widget-box .cancel.btn a {
+  color: #ffffff;
+}
+.creditRate .page-rate-widget-box .cancel a:hover, .page-rate-widget-box .cancel.btn a:hover {
+  background: transparent;
+  color: #ffee01;
+}
+.rateBox .rate-box-with-credit-button .creditButton {
+  border: 1px solid #f6ad49;
+  background-color: #f6ad49;
+  box-shadow: 1px 1px 3px #ffba61, -1px -1px 3px #ffba61, inset 1px 1px 3px transparent, inset -1px -1px 3px transparent;
+}
+.rateBox .creditButton a:hover {
+  color: #ffee01;
+}
+.creditRate .page-rate-widget-box {
+  position: relative;
+}
+.rateBox .rate-box-with-credit-button .creditButton, .page-rate-widget-box {
+  position: relative;
+}
+.creditRate .page-rate-widget-box, .modalbox .page-rate-widget-box {
+  position: relative;
+}
+#u-credit-view .modalbox {
+  box-shadow: 0 2px 6px rgb(72 72 72 / 50%);
+}
+.modalcontainer .modalbox {
+  background-color: #f5f5f5;
+}
+.modalcontainer .modalbox .credit {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.modalcontainer .cc-by-sa:before {
+  color: #f6ad49;
+}
+.modalbox .page-rate-widget-box .rate-points:before {
+  z-index: 10;
+}
+/*===========================================*/
+
+/*============= INTERWIKI ===================*/
+
+/*
+Created by: 7happy7
+Special Thanks: Boyu12, C-take
+Source: http://topia.wikidot.com/php-interwiki CC BY-SA 3.0
+Edited by: RTa_sub
+Modified Source: http://rtas.wikidot.com/interwiki CC BY-SA 3.0
+*/
+
+#output .head_link {
+  display: block;
+  margin-left: 10px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #333;
+}
+#output .head_link:before {
+  content: "»"
+}
+#output div[class^="ct-"] a {
+  display: block;
+  margin: 0.5em 20px;
+  color: #0000ee;
+}
+/*===========================================*/
+
+/*============ content ============*/
+
+.c-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: none;
+  width: 100%;
+  background: #444444;
+  color: #ffffff9c;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.c-footer:after {
+  content: "";
+  box-shadow: 0px -50px whitesmoke, 0px -56px dodgerblue, 0px -76px whitesmoke;
+  bottom: 20px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.c-footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 15px;
+}
+.c-footer .footer-links a {
+  flex-grow: 1;
+  padding: 5px 10px;
+  text-align: center;
+}
+.c-footer .credit {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.c-footer a {
+  color: #ddd;
+}
+#page-title, .dummy-title h1, #page-content h1 {
+  color: #551abb;
+  font-weight: bold;
+  font-family: arial, helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "MS Pゴシック", clean, sans-serif;
+  border: none;
+  margin: 13px 0;
+}
+#page-content hr {
+  margin: 0.5em auto 0.5em auto;
+}
+h2 {
+  font-size: 1.6em;
+  margin: 13px 0;
+}
+h3 {
+  font-size: 1.4em;
+  margin: 13px 0;
+}
+a {
+  color: #0000ee;
+}
+a.newpage {
+  color: red;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  color: -webkit-activelink;
+}
+.collapsible-block-content {
+  margin: 5px;
+  padding: 5px;
+  border: 1px double rgb(204, 204, 204);
+}
+.region .collapsible-block-link {
+  color: #333;
+}
+.region .collapsible-block-folded a:before {
+  content: "+";
+  height: 1.5em;
+  width: 1.5em;
+  color: #333;
+  display: inline-block;
+  border: solid 1px #333;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.region .collapsible-block-unfolded a:before {
+  content: "-";
+  height: 1.5em;
+  width: 1.5em;
+  color: #333;
+  display: inline-block;
+  border: solid 1px #333;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.region .collapsible-block-content {
+  margin: unset;
+  padding: unset;
+  border: unset;
+}
+@media (max-width: 767px) {
+  #page-title, .dummy-title h1 {
+    color: #333;
+  }
+}
+.error-block {
+  display: none;
+}
+[[/code]]
+[[/iftags]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** PAMWACハブテーマ
+**著者:** [[*user RTa-technology]]
+**作成年:** 2022
+[[include :scp-jp:credit:end-preview]]
+[[div class="dummy-title"]]
++* CSSカスタマイズ(PAMWACWiki(仮))
+[[/div]]
+[[module ListPages limit="1" range="." wrapper="no" separate="no" prependLine="[[div_]]" appendLine="[[/div]]"]]
+###6495ed|登録日##：%%created_at|%Y/%m/%d %a %T%% _
+###6495ed|更新日##：%%updated_at|%Y/%m/%d %a %T%%
+[[/module]]
+[[module ListPages limit="1" wrapper="no" separate="no" order="random" prependLine="[[div_]]" appendLine="[[/div]]"]]
+###6495ed|所要時間##：約 [[#expr (%%size%%%17+3)]] 分で読めます
+[[/module]]
+------
+[[div_]]
+[# ▽]タグ一覧
+[# PAMWAC] [# りどみ] [# テンプレート] [# テーマ] [# 構文] [[/div]]
+------
+@@@@
+
+[[include :rtas:theme-temp]]
+[[div class="region"]]
+[[collapsible show="..." hide="テキスト"]]
+@@[[div class="region"]]@@
+@@[[collapsible show="..." hide="テキスト"]]@@
+@@[[/collapsible]]@@
+@@[[/div]]@@
+[[/collapsible]]
+[[/div]]
+
+[[module css]]
+#page-title {
+  display: none;
+}
+[[/module]]
+
+追記・修正お願いします。
+
+------
+[[div_]]
+[#header △]メニュー
+[# 項目変更] 　 [# 項目コピー] 　 [# 項目変更点] 　 [[button history text="編集履歴"]] 　 [# アップロードページ][[/div]]
+------
+
+[[>]]
+この項目が面白かったなら……＼ポチッと/
+[[module Rate]]
+[[/>]]
+
+[[=]]
+[# -PAMWACwiki-]
+[[/=]]
+[[/iftags]]
